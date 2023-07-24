@@ -1,0 +1,51 @@
+{
+    "name": "MyApp",
+    "displayName": "My App",
+    "expo": {
+      "name": "My App",
+      "slug": "my-app",
+      "version": "1.0.0",
+      "sdkVersion": "47.0.0",
+      "platforms": ["ios", "android", "web"],
+      "description": "My awesome React Native app",
+      "icon": "./assets/icon.png",
+      "splash": {
+        "image": "./assets/splash.png",
+        "resizeMode": "contain",
+        "backgroundColor": "#ffffff"
+      },
+      "scheme": "myapp",
+      "orientation": "portrait",
+      "updates": {
+        "fallbackToCacheTimeout": 0
+      },
+      "assetBundlePatterns": ["assets/*"],
+      "ios": {
+        "bundleIdentifier": "com.myapp",
+        "supportsTablet": true,
+        "config": {
+          "googleSignIn": {
+            "reservedClientId": "YOUR_GOOGLE_SIGN_IN_CLIENT_ID"
+          }
+        }
+      },
+      "web": {
+        "favicon": "./assets/favicon.png",
+        "name": "My Web App",
+        "description": "My awesome React Native app for the web",
+        "backgroundColor": "#ffffff",
+        "startUrl": "/",
+        "manifest": "./web-manifest.json",
+        "config": {
+        }
+      },
+      "android": {
+        "package": "com.myapp",
+        "versionCode": 1
+      },
+      "extra": {
+        "API_BASE_URL": "https://api.example.com"
+      }
+    }
+  }
+  
